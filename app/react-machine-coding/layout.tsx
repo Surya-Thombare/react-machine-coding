@@ -6,11 +6,12 @@ export default function Layout({
   children: React.ReactNode;
 }) {
   return (
-    <section>
+    <div className="flex ">
       {/* Include shared UI here e.g. a header or sidebar */}
-      <Sidebar></Sidebar>
-
-      {children}
-    </section>
+      <div className="w-1/5">
+        <Sidebar />
+      </div>
+      <div className="flex w-4/5 justify-center">{children}</div>
+    </div>
   );
 }
