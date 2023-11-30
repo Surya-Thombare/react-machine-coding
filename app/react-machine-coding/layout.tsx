@@ -8,7 +8,7 @@ export default function Layout({
   return (
     <div className="flex ">
       {/* Include shared UI here e.g. a header or sidebar */}
-      <div className="w-1/5">
+      <div className="w-1.5/5">
         <Sidebar />
       </div>
       <div className="flex w-4/5 ">{children}</div>

@@ -1,12 +1,12 @@
 import Link from "next/link";
 import React from "react";
 
-const Sidebar = () => {
+const Sidebar = ({ challengesList = {} }) => {
   return (
     <>
       <div className="flex h-screen w-full flex-col justify-between border-e bg-dark">
         <div>
-          <div className="inline-flex h-16 w-full items-center justify-center">
+          <div className="inline-flex h-16 w-full items-center justify-center text-center">
             <span className="grid h-10 w-full place-content-center rounded-lg bg-dark-100 text-lg text-slate-300	">
               React Machine Coding Challenges
             </span>
