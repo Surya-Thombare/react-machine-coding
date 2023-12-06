@@ -11,7 +11,7 @@ export default function Layout({
       <div className="w-1.5/5">
         <Sidebar />
       </div>
-      <div className="flex w-4/5 ">{children}</div>
+      <div className="flex w-full">{children}</div>
     </div>
   );
 }

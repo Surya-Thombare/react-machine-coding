@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import Todo, { Code } from "@/components/shared/todo";
@@ -19,27 +20,34 @@ const Page = () => {
   // const [code, setCode] = useState(Code);
 
   return (
-    <div className="text-slate-300">
+    <div className="text-slate-300 w-full">
       <div className="inline-flex h-16 w-full items-center justify-center">
         <span className="grid h-10 w-full place-content-center rounded-lg bg-dark-100 text-lg text-slate-300	">
           TODO LIST
         </span>
       </div>
-      <div className="flex flex-row gap-8">
-        <div className="m-2"></div>
-        <iframe
-          src="https://codesandbox.io/embed/26gtlt?view=Editor+%2B+Preview&module=%2Fsrc%2Findex.js&hidenavigation=1"
-          // style={{width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden}}
+      <div className="flex flex-row gap-8 w-full">
+        <Todo />
+        {/* <div className="m-2"></div> */}
+        {/* <iframe
+          src="https://codesandbox.io/embed/26gtlt?view=editor&module=%2Fsrc%2Findex.js"
           style={{
-            width: "800px",
+            width: "80%",
             height: "500px",
+            border: "0",
             borderRadius: "4px",
             overflow: "hidden",
           }}
           title="GridLights"
           allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
           sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-        ></iframe>
+        ></iframe> */}
+        <a href="https://codesandbox.io/p/sandbox/gridlights-26gtlt">
+          <img
+            alt="Edit GridLights"
+            src="https://codesandbox.io/static/img/play-codesandbox.svg"
+          />
+        </a>
       </div>
     </div>
   );
