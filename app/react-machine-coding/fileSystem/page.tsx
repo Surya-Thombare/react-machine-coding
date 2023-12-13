@@ -6,11 +6,7 @@ import Folder from "@/components/folder";
 const Page = () => {
   const [explorerData, setExplorerData] = useState(explorer);
 
-  return (
-    <div>
-      <Folder explorer={explorer} />
-    </div>
-  );
+  return <div>{/* <Folder explorer={explorer} /> */}</div>;
 };
 
 export default Page;

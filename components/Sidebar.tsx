@@ -33,10 +33,10 @@ const Sidebar = ({ challengesList = {} }) => {
                 </li>
                 <li>
                   <Link
-                    href="/react-machine-coding/todo"
+                    href="/react-machine-coding/progressBar"
                     className="t group relative flex justify-center rounded bg-stone-600 px-2 py-1.5 text-blue-700"
                   >
-                    Todo
+                    progressBar
                   </Link>
                 </li>
                 <li>
