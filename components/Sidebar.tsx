@@ -63,6 +63,14 @@ const Sidebar = ({ challengesList = {} }) => {
                     getCurrentTime
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    href="/react-machine-coding/fetchDataFromApi"
+                    className="t group relative flex justify-center rounded bg-stone-600 px-2 py-1.5 text-blue-700"
+                  >
+                    fetchDataFromApi
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
