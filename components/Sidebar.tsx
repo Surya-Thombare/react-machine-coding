@@ -47,6 +47,14 @@ const Sidebar = ({ challengesList = {} }) => {
                     Todo
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    href="/react-machine-coding/CountTabChange"
+                    className="t group relative flex justify-center rounded bg-stone-600 px-2 py-1.5 text-blue-700"
+                  >
+                    CountTabChange
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
