@@ -71,6 +71,14 @@ const Sidebar = ({ challengesList = {} }) => {
                     fetchDataFromApi
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    href="/react-machine-coding/tabs"
+                    className="t group relative flex justify-center rounded bg-stone-600 px-2 py-1.5 text-blue-700"
+                  >
+                    Tabs
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
