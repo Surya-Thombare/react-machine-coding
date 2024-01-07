@@ -79,6 +79,14 @@ const Sidebar = ({ challengesList = {} }) => {
                     Tabs
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    href="/react-machine-coding/followTheClick"
+                    className="t group relative flex justify-center rounded bg-stone-600 px-2 py-1.5 text-blue-700"
+                  >
+                    followTheClick
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>

@@ -1,24 +1,26 @@
 "use client";
-import { useEffect } from "react";
-import * as React from "react";
-type pos = {
+import React, { useEffect, useRef, useState } from "react";
+
+type Pos = {
   clientX: number;
   clientY: number;
 };
 
 export default function FollowTheLeader() {
-  let ref = React.useRef<HTMLDivElement>(null);
-  const [position, setPosition] = React.useState([0, 0]);
+  const ref = useRef<HTMLDivElement>(null);
+  const [position, setPosition] = useState<[number, number]>([0, 0]);
 
-  const handleClick = ({ clientX, clientY }: pos) => {
-    const { width, height } = ref?.current?.getBoundingClientRect();
-    setPosition([clientX - width / 2, clientY - height / 2]);
+  const handleClick = ({ clientX, clientY }: Pos) => {
+    if (ref.current) {
+      const { width, height } = ref.current.getBoundingClientRect();
+      setPosition([clientX - width / 2, clientY - height / 2]);
+    }
   };
 
   return (
-    <div className="bg-gray-300 h-full w-full m-8" onClick={handleClick}>
+    <div className="bg-gray-300 w-full m-8 h-3/4" onClick={handleClick}>
       <div
-        className="box bg-yellow-300 h-5 w-5"
+        className="box bg-yellow-300 h-6 w-6 "
         ref={ref}
         style={{
           transform: `translate(${position[0]}px, ${position[1]}px)`,
