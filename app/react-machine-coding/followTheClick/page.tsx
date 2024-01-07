@@ -1,4 +1,5 @@
 "use client";
+import { useEffect } from "react";
 import * as React from "react";
 type pos = {
   clientX: number;
@@ -6,16 +7,16 @@ type pos = {
 };
 
 export default function FollowTheLeader() {
-  const ref = React.useRef(document.createElement("div"));
+  let ref = React.useRef<HTMLDivElement>(null);
   const [position, setPosition] = React.useState([0, 0]);
 
   const handleClick = ({ clientX, clientY }: pos) => {
-    const { width, height } = ref.current.getBoundingClientRect();
+    const { width, height } = ref?.current?.getBoundingClientRect();
     setPosition([clientX - width / 2, clientY - height / 2]);
   };
 
   return (
-    <div className="bg-gray-300 h-96 w-96 m-8" onClick={handleClick}>
+    <div className="bg-gray-300 h-full w-full m-8" onClick={handleClick}>
       <div
         className="box bg-yellow-300 h-5 w-5"
         ref={ref}
