@@ -15,7 +15,7 @@ export default function Page() {
   if (time === null) return null;
 
   return (
-    <section>
+    <section className="m-auto text-7xl  text-orange-300">
       <h1>Current Time</h1>
       <p>{time.toLocaleTimeString()}</p>
     </section>

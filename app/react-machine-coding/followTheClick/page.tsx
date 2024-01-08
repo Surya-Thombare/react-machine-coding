@@ -18,9 +18,12 @@ export default function FollowTheLeader() {
   };
 
   return (
-    <div className="bg-gray-300 w-full m-8 h-3/4" onClick={handleClick}>
+    <div
+      className="bg-gray-900 w-full m-8 h-3/4 overflow-hidden"
+      onClick={handleClick}
+    >
       <div
-        className="box bg-yellow-300 h-6 w-6 "
+        className="box bg-green-400 h-7 w-7"
         ref={ref}
         style={{
           transform: `translate(${position[0]}px, ${position[1]}px)`,

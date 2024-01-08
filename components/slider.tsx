@@ -7,7 +7,7 @@ interface SliderProps {
   onChange: (value: number) => void;
 }
 
-export default function Slider({ min, max, onChange }: SliderProps) {
+const Slider = ({ min, max, onChange }: SliderProps) => {
   const [value, setValue] = React.useState<number>(1);
 
   return (
@@ -28,4 +28,6 @@ export default function Slider({ min, max, onChange }: SliderProps) {
       <div>{value}</div>
     </div>
   );
-}
+};
+
+export default Slider;

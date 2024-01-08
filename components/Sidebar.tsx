@@ -14,11 +14,11 @@ const Sidebar = ({ challengesList = {} }) => {
 
           <div className="border-t border-dark-100">
             <div className="px-2">
-              <ul className="space-y-1 border-t border-gray-100 pt-4">
+              <ul className="space-y-1 border-t border-gray-100 pt-4 flex flex-col gap-3">
                 <li>
                   <Link
                     href="/react-machine-coding/todo"
-                    className="t group relative flex justify-center rounded bg-stone-600 px-2 py-1.5 text-blue-700"
+                    className="t group relative flex justify-center rounded border-orange-400 border-2 px-2 py-1.5 text-yellow-500"
                   >
                     Todo
                   </Link>
@@ -26,7 +26,7 @@ const Sidebar = ({ challengesList = {} }) => {
                 <li>
                   <Link
                     href="/react-machine-coding/calculator"
-                    className="t group relative flex justify-center rounded bg-stone-600 px-2 py-1.5 text-blue-700"
+                    className="t group relative flex justify-center rounded border-orange-400 border-2 px-2 py-1.5 text-yellow-500"
                   >
                     Calculator
                   </Link>
@@ -34,7 +34,7 @@ const Sidebar = ({ challengesList = {} }) => {
                 <li>
                   <Link
                     href="/react-machine-coding/progressBar"
-                    className="t group relative flex justify-center rounded bg-stone-600 px-2 py-1.5 text-blue-700"
+                    className="t group relative flex justify-center rounded border-orange-400 border-2 px-2 py-1.5 text-yellow-500"
                   >
                     progressBar
                   </Link>
@@ -42,7 +42,7 @@ const Sidebar = ({ challengesList = {} }) => {
                 <li>
                   <Link
                     href="/react-machine-coding/todo"
-                    className="t group relative flex justify-center rounded bg-stone-600 px-2 py-1.5 text-blue-700"
+                    className="t group relative flex justify-center rounded border-orange-400 border-2 px-2 py-1.5 text-yellow-500"
                   >
                     Todo
                   </Link>
@@ -50,7 +50,7 @@ const Sidebar = ({ challengesList = {} }) => {
                 <li>
                   <Link
                     href="/react-machine-coding/CountTabChange"
-                    className="t group relative flex justify-center rounded bg-stone-600 px-2 py-1.5 text-blue-700"
+                    className="t group relative flex justify-center rounded border-orange-400 border-2 px-2 py-1.5 text-yellow-500"
                   >
                     CountTabChange
                   </Link>
@@ -58,7 +58,7 @@ const Sidebar = ({ challengesList = {} }) => {
                 <li>
                   <Link
                     href="/react-machine-coding/getCurrentTime"
-                    className="t group relative flex justify-center rounded bg-stone-600 px-2 py-1.5 text-blue-700"
+                    className="t group relative flex justify-center rounded border-orange-400 border-2 px-2 py-1.5 text-yellow-500"
                   >
                     getCurrentTime
                   </Link>
@@ -66,7 +66,7 @@ const Sidebar = ({ challengesList = {} }) => {
                 <li>
                   <Link
                     href="/react-machine-coding/fetchDataFromApi"
-                    className="t group relative flex justify-center rounded bg-stone-600 px-2 py-1.5 text-blue-700"
+                    className="t group relative flex justify-center rounded border-orange-400 border-2 bg-transparent px-2 py-1.5  text-yellow-500"
                   >
                     fetchDataFromApi
                   </Link>
@@ -74,7 +74,7 @@ const Sidebar = ({ challengesList = {} }) => {
                 <li>
                   <Link
                     href="/react-machine-coding/tabs"
-                    className="t group relative flex justify-center rounded bg-stone-600 px-2 py-1.5 text-blue-700"
+                    className="t group relative flex justify-center rounded border-orange-400 border-2 px-2 py-1.5 text-yellow-500"
                   >
                     Tabs
                   </Link>
@@ -82,7 +82,7 @@ const Sidebar = ({ challengesList = {} }) => {
                 <li>
                   <Link
                     href="/react-machine-coding/followTheClick"
-                    className="t group relative flex justify-center rounded bg-stone-600 px-2 py-1.5 text-blue-700"
+                    className="t group relative flex justify-center rounded border-orange-400 border-2 px-2 py-1.5 text-yellow-500"
                   >
                     followTheClick
                   </Link>
@@ -90,7 +90,7 @@ const Sidebar = ({ challengesList = {} }) => {
                 <li>
                   <Link
                     href="/react-machine-coding/counterWithuseReducer"
-                    className="t group relative flex justify-center rounded bg-stone-600 px-2 py-1.5 text-blue-700"
+                    className="t group relative flex justify-center rounded border-orange-400 border-2 px-2 py-1.5 text-yellow-500"
                   >
                     counterWithuseReducer
                   </Link>
