@@ -87,6 +87,14 @@ const Sidebar = ({ challengesList = {} }) => {
                     followTheClick
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    href="/react-machine-coding/counterWithuseReducer"
+                    className="t group relative flex justify-center rounded bg-stone-600 px-2 py-1.5 text-blue-700"
+                  >
+                    counterWithuseReducer
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
